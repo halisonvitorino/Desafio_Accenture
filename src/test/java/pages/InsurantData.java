@@ -12,7 +12,7 @@ public class InsurantData {
 	public WebDriver driver = null;
 
 	By firstName 		= By.id("firstname");
-	By lastName 		= By.id("lastname.");
+	By lastName 		= By.id("lastname");
 	By birthDate 		= By.id("birthdate");
 	By genderMale 		= By.xpath("/html/body/div[1]/div/div[1]/div/div/form/div/section[2]/div[4]/p/label[1]/span\r\n");
 	By genderFemale 	= By.xpath("/html/body/div[1]/div/div[1]/div/div/form/div/section[2]/div[4]/p/label[2]/span");
@@ -40,7 +40,8 @@ public class InsurantData {
 		try{
 			WebElement a = driver.findElement(firstName);
 			Assert.assertEquals(true, a.isDisplayed());
-			driver.findElement(firstName).sendKeys(text);		}
+			driver.findElement(firstName).sendKeys(text);		
+			}
 		catch(NoSuchElementException e){
 			
 		}	
@@ -50,7 +51,8 @@ public class InsurantData {
 		try{
 			WebElement a = driver.findElement(lastName);
 			Assert.assertEquals(true, a.isDisplayed());
-			driver.findElement(lastName).sendKeys(text);		}
+			driver.findElement(lastName).sendKeys(text);		
+			}
 		catch(NoSuchElementException e){
 			
 		}
@@ -60,14 +62,23 @@ public class InsurantData {
 		try{
 			WebElement a = driver.findElement(birthDate);
 			Assert.assertEquals(true, a.isDisplayed());
-			driver.findElement(birthDate).sendKeys(text);		}
+			driver.findElement(birthDate).sendKeys(text);		
+			}
 		catch(NoSuchElementException e){
 			
 		}	
 	}
 
 	public void fill_genderMale() {
-		driver.findElement(genderMale).click();	 		
+		driver.findElement(genderMale).click();	 
+		try{
+			WebElement a = driver.findElement(genderMale);
+			Assert.assertEquals(true, a.isDisplayed());
+			driver.findElement(genderMale).click();		
+			}
+		catch(NoSuchElementException e){
+			
+		}
 	}
 
 	public void fill_genderFemale() {		
