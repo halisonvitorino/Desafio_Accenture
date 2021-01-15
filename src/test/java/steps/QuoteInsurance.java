@@ -70,6 +70,7 @@ public class QuoteInsurance {
 
 	@When("The user fill in the form Enter Insurant Data")
 	public void the_user_fill_in_the_form_enter_insurant_data() throws InterruptedException {
+		
 		id.fill_firstName("halison");
 		id.fill_lastName("Vitorino");
 		id.fill_birthDate("04/25/1975");
