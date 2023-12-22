@@ -17,18 +17,18 @@ public class InsurantData {
 	By genderMale 		= By.xpath("/html/body/div[1]/div/div[1]/div/div/form/div/section[2]/div[4]/p/label[1]/span\r\n");
 	By genderFemale 	= By.xpath("/html/body/div[1]/div/div[1]/div/div/form/div/section[2]/div[4]/p/label[2]/span");
 	By streetAddress 	= By.id("streetaddress");
-	By country 			= By.id("country");
-	By zipCode 			= By.id("zipcode");
-	By city 			= By.id("city");
+	By country 	        = By.id("country");
+	By zipCode 	        = By.id("zipcode");
+	By city 		= By.id("city");
 	By occupation 		= By.id("occupation");
 	By speeding 		= By.xpath("/html/body/div[1]/div/div[1]/div/div/form/div/section[2]/div[10]/p/label[1]\r\n");
 	By bungeejumping 	= By.xpath("/html/body/div[1]/div/div[1]/div/div/form/div/section[2]/div[10]/p/label[2]\r\n");
 	By cliffdiving 		= By.xpath("/html/body/div[1]/div/div[1]/div/div/form/div/section[2]/div[10]/p/label[3]\r\n");
 	By skydiving 		= By.xpath("/html/body/div[1]/div/div[1]/div/div/form/div/section[2]/div[10]/p/label[4]\r\n");
-	By other 			= By.xpath("/html/body/div[1]/div/div[1]/div/div/form/div/section[2]/div[10]/p/label[5]\r\n");
-	By website 			= By.id("website");
-	By picture 			= By.id("picture");
-	By open 			= By.id("open");	
+	By other 		= By.xpath("/html/body/div[1]/div/div[1]/div/div/form/div/section[2]/div[10]/p/label[5]\r\n");
+	By website 		= By.id("website");
+	By picture 		= By.id("picture");
+	By open 		= By.id("open");	
 	By nextenterproductdata = By.id("nextenterproductdata");	
 
 
